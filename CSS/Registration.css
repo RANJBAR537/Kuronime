@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Dirooz';
+    src: url('../Font/Dirooz.ttf'),
+        format('truetype');
+}
+
+@font-face {
+    font-family: 'Far_Fanni';
+    src: url('../Font/Far_Fanni.ttf'),
+        format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    font-family: Dirooz;
+}
+
+.main {
+    background-image: url('/image/Registration/upscalemedia-transformed.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #EEEEEE;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .glass-box {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.main div h1 {
+    font-family: Far_Fanni;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+input:focus {
+    box-shadow: 0 0 0 .25rem rgba(204, 8, 8, 0.25) !important;
+    border: 1px solid #970c0c !important;
+}
+
+button {
+    color: #EEEEEE !important;
+    /* background-color: #A1B57D !important; */
+}
+
+@media(max-width:500px) {
+     .main {
+        padding: 0;
+    }
+
+    .main .glass-box {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main>.row, .main .glass-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
