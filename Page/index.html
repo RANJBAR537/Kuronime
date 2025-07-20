@@ -12,21 +12,22 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
-            <div class="container-fluid">
+            <div class="container-fluid d-flex align-item-center">
                 <a href="#" class="header-kuronime-a"><img src="../image/Index//logo.svg"></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler btn-color" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon img-filter"></span>
                 </button>
-                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end nav-window" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
+                    <div class="offcanvas-header justify-content-between">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">فهرست کورونیم</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close close-btn" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body ">
-                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 main-nav-ul">
+                    <div class="offcanvas-body align-items-center ">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 main-nav-ul  ">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">گورستان انیمه</a>
                             </li>
@@ -39,58 +40,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">دروازه ارتباط</a>
                             </li>
-                            
+
                         </ul>
                         <div>
-                            <button type="button" class="button-login" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">طسم ورود</button>
-
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content login-bakcolor">
-                                        <div class="modal-header justify-content-between">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">به کورونیم خوش امدید
-                                            </h1>
-                                            <button type="button" class="btn-close btn-margin" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">نام
-                                                        کاربری:</label>
-                                                    <input type="text" class="form-control login-input-focus"
-                                                        id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">گذرواژه:</label>
-                                                    <input type="text" class="form-control login-input-focus"
-                                                        id="recipient-phone">
-                                                </div>
-                                            </form>
-                                            <span class="d-flex justify-content-center">
-                                                <a href="#" class="login-a-color">فراموشی گزرواژه</a>
-                                                /
-                                                <a href="Registration.html" class="login-a-color"> ثبت نام</a>
-                                            </span>
-
-                                        </div>
-                                        <div class="modal-footer justify-content-center">
-                                            <button type="button" class="btn login-btn-close"
-                                                data-bs-dismiss="modal">بستن</button>
-                                            <button type="button" class="btn login-btn-login"
-                                                data-bs-dismiss="modal">ورود</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="/Page/login.html" class="button-login">طسم ورود</a>
                         </div>
-                    </div>
-
         </nav>
 
-        
+
 
         <section class="section-header">
             <div>
@@ -198,8 +155,6 @@
         </div>
     </footer>
     <script src="/Js/bootstrap.bundle.min.js"></script>
-    <script src="/Js/popper.min.js"></script>
-    <script src="/Js/bootstrap.min.js"></script>
 </body>
 
 </html>
